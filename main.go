@@ -50,7 +50,7 @@ func main() {
 		bodyBytesSent = realisticBytesSent(statusCode)
 		userAgent = gofakeit.UserAgent()
 
-		fmt.Printf("%s - - [%s] \"%s %s %s\" %v %v \"%s\" \"%s\"\n", ip, timeLocal.Format("02/Jan/2006:15:04:05 -0700"), httpMethod, path, httpVersion, statusCode, bodyBytesSent, referrer, userAgent)
+		fmt.Printf("%s - - [%s] '%s %s %s' %v %v '%s' '%s'\n", ip, timeLocal.Format("02/Jan/2006:15:04:05 -0700"), httpMethod, path, httpVersion, statusCode, bodyBytesSent, referrer, userAgent)
 	}
 }
 
