@@ -51,6 +51,7 @@ func main() {
 		userAgent = gofakeit.UserAgent()
 
 		fmt.Printf(`%s - - [%s] "%s %s %s" %v %v "%s" "%s"`, ip, timeLocal.Format("02/Jan/2006:15:04:05 -0700"), httpMethod, path, httpVersion, statusCode, bodyBytesSent, referrer, userAgent)
+		fmt.Printf("\n")
 	}
 }
 
